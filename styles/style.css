@@ -1,0 +1,83 @@
+/* font-family: 'Big Shoulders Display'; 700 header
+font-family: 'Lexend Deca'; 400 graph and button*/
+
+/* Colors */
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* graphs */
+  --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+/* General */
+
+body {
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+}
+
+/* Cards */
+
+.cards-wrapper {
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* Shared With All Cards */
+
+.card {
+  padding: 3em;
+}
+
+.card-icon {
+}
+
+.card-heading {
+  color: var(--very-light-gray);
+  font-family: 'Big Shoulders Display';
+  font-size: 2em;
+}
+
+.card-graph {
+  color: var(--transparent-white);
+  line-height: 1.6;
+  padding: 2em 0;
+  width: 90%;
+}
+
+.learn-button {
+  background-color: var(--very-light-gray);
+  padding: 1em;
+}
+
+.sedan-card {
+  background-color: var(--bright-orange);
+  border-radius: 8px 8px 0 0;
+}
+
+.sedan-button {
+  color: var(--bright-orange);
+}
+
+.suvs-card {
+  background-color: var(--dark-cyan);
+}
+
+.suvs-button {
+  color: var(--dark-cyan);
+}
+
+.luxury-card {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 8px 8px;
+}
+
+.luxury-button {
+  color: var(--very-dark-cyan);
+}
